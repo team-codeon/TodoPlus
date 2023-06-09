@@ -27,12 +27,13 @@ body {
   
   #right_panel {
     position: absolute;
+    border-left: solid 3px #ccc;
+    width: 100px;
+    height: 100%;
     right: 0;
-    top: 0;
-    bottom: 0;
-    width: 200px;
-    color: #fff;
-    background: black;
+    background-color: #f0f0f0;
+    resize: horizontal;
+    overflow-x: auto;
   }
   
   #drag {
