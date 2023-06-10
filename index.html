@@ -5,18 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Todo+</title>
-    <link rel="icon" type="image/x-icon" href="/media/logo.svg" />
-    <link rel="stylesheet" type="text/css" href="/styles.css" />
-    <script src="dragdrop.js"></script>
-  </head>
+    <link rel="icon" type="image/x-icon" href="/media/logo.svg">
+    <script src="/js/devicecheck.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+</head>
 
-  <body>
-    <div id="container">
-      <div id="left_panel">left content!</div>
-      <div id="right_panel">
-        <div id="drag"></div>
-        right content!
-      </div>
+
+<body>
+  <div class="menu" id="menu">
+    <div class="menu-top">
+      <img class="iconorlogo" src="/media/menu-icon.svg">
+      <img class="iconorlogo" src="/media/logowithtext.png">
+    </div>
+    <div id="todos">
+      <script src="/js/todosadd.js"></script>
     </div>
   </body>
 </html>
