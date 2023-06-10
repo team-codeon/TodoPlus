@@ -14,9 +14,7 @@ h1,h2,h3,h4,h5,h6,p {
   margin-bottom: 0;
 }
 
-.right {
-  border-radius: 15px;
-  background-color: #534c4c;
-  height: 86%;
-  padding: 2%;
+.horizontal-spacer {
+  display: inline;
+  width: 5px;
 }
