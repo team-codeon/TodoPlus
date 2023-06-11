@@ -27,6 +27,7 @@
 .menu-bottom {
     height: 90%;
     padding: 1%;
+    overflow-y: scroll; 
 }
 
 .todo {
