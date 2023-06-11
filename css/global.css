@@ -18,3 +18,12 @@ h1,h2,h3,h4,h5,h6,p {
   display: inline;
   width: 5px;
 }
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
