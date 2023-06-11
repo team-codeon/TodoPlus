@@ -1,36 +1,36 @@
 .menu {
-    border-radius: 15px;
-    background-color: #a7c3d1;
-    height: 86%;
-    padding: 2%;
-    width: 25%
+  border-radius: 15px;
+  background-color: #a7c3d1;
+  height: 86%;
+  padding: 2%;
+  width: 25%;
 }
 
 .menu-icon {
-    width: 20%;
-    display: inline;
+  width: 20%;
+  display: inline;
 }
 
 .menu-top {
-    height: 8%
+  height: 8%;
 }
 .todo-text {
-    display: inline;
-    height: 20%
+  display: inline;
+  height: 20%;
 }
 
 .iconorlogo {
-    height: 100%;
-    display: inline;
+  height: 100%;
+  display: inline;
 }
 
 .todo {
-    width: 100%;
+  width: 100%;
 }
 
 .todo-button {
-    border-radius: 15px;
-    width: 100%;
-    background-color: #d4d4a6;
-    border-width: 0;
+  border-radius: 15px;
+  width: 100%;
+  background-color: #d4d4a6;
+  border-width: 0;
 }
