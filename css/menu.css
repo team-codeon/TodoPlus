@@ -24,13 +24,31 @@
     display: inline;
 }
 
-.todo {
-    width: 100%;
+.menu-bottom {
+    height: 90%;
+    padding: 1%;
 }
 
-.todo-button {
-    border-radius: 15px;
-    width: 100%;
+.todo {
+    width: 90%;
     background-color: #d4d4a6;
-    border-width: 0;
+    border-radius: 15px;
+    padding: 2%;
+    padding-left: 5%;
+}
+
+.menutodostext {
+    color: #3E3E69;
+    font-size: 75%;
+    width: 84%;
+}
+
+.addtodo {
+    font-size: 75%;
+    border-radius: 15px;
+    background-color: #d4d4a6;
+    width: 50%;
+    padding: 2%;
+    text-align: center;
+    margin: auto;
 }
