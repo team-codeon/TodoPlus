@@ -1,5 +1,6 @@
 /* Checks if device is a moblie or a desktop */
-let devicetype = "desktop"
-if (window.innerWidth > window.innerHeight) {
-  devicetype = "mobile"
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  const devicetype="desktop";
+}else{
+  const devicetype="mobile";
 }

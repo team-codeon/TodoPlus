@@ -6,22 +6,22 @@
   width: 25%;
 }
 
-.menu-icon {
-  width: 20%;
-  display: inline;
+.menu-top {
+  height: 8vh;
 }
 
-.menu-top {
-  height: 8%;
-}
 .todo-text {
   display: inline;
-  height: 20%;
+  max-height: 20%;
 }
 
-.iconorlogo {
+
+.logo {
   height: 100%;
   display: inline;
+  width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .menu-bottom {
@@ -40,8 +40,9 @@
 
 .menutodostext {
   color: #3e3e69;
-  font-size: 75%;
+  font-size: 1.5vw;
   width: 84%;
+  overflow-x: hidden;
 }
 
 .addtodo {
@@ -53,4 +54,23 @@
   text-align: center;
   margin: auto;
   cursor: pointer;
+  font-size: 1vw;
+}
+
+.todonameset{
+  width: 90%;
+  background-color: #d4d4a6;
+  border-radius: 15px;
+  padding: 2%;
+  padding-left: 5%;
+}
+
+.todonamesetform {
+  background-color: #3e3e6900;
+  border-radius: 4px;
+  padding-left: 3%;
+  width: 70%;
+  display: inline;
+  height: 3.5vh;
+  font-size: 3vh
 }
