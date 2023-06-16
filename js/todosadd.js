@@ -17,14 +17,17 @@ if (alltodos != "") {
 }
 
 const box = `
-  <div class="addtodo" onclick = "addtodo()">
-  <h4>Add todo</h4>
+  <div class="todonameset" id="todonameset">
+    <form onkeydown="return event.key != 'Enter';" style="display: inline; height: 10%;">
+      <input class="todonamesetform" type="text" placeholder="New Todo" id="todonamesetform">
+    </form>
+    <img src="/media/tick.svg" class="tick" onclick="addtodoafterselect()">
   </div>
 
-  <div class="todonameset">
-    <form onkeydown="return event.key != 'Enter';" style="display: inline; height: 10%;">
-      <input class="todonamesetform" type="text" placeholder="Name" value="New Todo">
-    </form>
+  <div style="height: 5px"></div>
+
+  <div class="addtodo" onclick = "addtodo()">
+    <h4>Add todo</h4>
   </div>
 `;
 

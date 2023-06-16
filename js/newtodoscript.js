@@ -1,12 +1,15 @@
-/* To do: add a form to add todo name */
-
-function addtodo() {
+function addtodoafterselect() {
+    let todoname3 = document.getElementById("todonamesetform").value;
+    if (todoname3 == "") {
+        todoname3 = "New Todo"
+    } 
+    
     if (alltodos != "") {
-        localStorage.setItem("todos",localStorage.getItem("todos")+"John Doe"+","/*Change to user choice of todo name*/)
+        localStorage.setItem("todos",localStorage.getItem("todos")+todoname3 + ",")
     }
 
     else {
-        localStorage.setItem("todos","John Doe"+",")
+        localStorage.setItem("todos",todoname3+",")
     };
 
     document.getElementById("todos").innerHTML = ""
@@ -28,10 +31,24 @@ function addtodo() {
     }
     
     const box = `
-      <div class="addtodo" onclick = "addtodo()">
-      <h4>Add todo</h4>
-      </div>
+        <div class="todonameset" id="todonameset">
+            <form onkeydown="return event.key != 'Enter';" style="display: inline; height: 10%;">
+                <input class="todonamesetform" type="text" placeholder="New Todo" id="todonamesetform">
+            </form>
+            <img src="/media/tick.svg" class="tick" onclick="addtodoafterselect()">
+        </div>
+
+        <div style="height: 5px"></div>
+
+        <div class="addtodo" onclick = "addtodo()">
+            <h4>Add todo</h4>
+        </div>
     `;
     
     document.getElementById("todos").innerHTML += box;
+}
+
+function addtodo() {
+    document.getElementById("todonameset").style.display = "block"
+    document.getElementById("todonamesetform").focus()
 }
