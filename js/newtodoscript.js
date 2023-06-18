@@ -11,6 +11,7 @@ function addtodoafterselect() {
     else {
         localStorage.setItem("todos",todoname3+",")
     };
+    localStorage.setItem(localStorage.length-1,",")
 
     document.getElementById("todos").innerHTML = ""
 
@@ -33,11 +34,10 @@ function addtodoafterselect() {
     const box = `
         <div class="todonameset" id="todonameset">
             <form onkeydown="return event.key != 'Enter';" style="display: inline; height: 10%;">
-                <input class="todonamesetform" type="text" placeholder="New Todo" id="todonamesetform">
+                <input class="todonamesetform" type="text" placeholder="New Todo" id="todonamesetform" onblur="addtodoafterselect()">
             </form>
             <img src="/media/tick.svg" class="tick" onclick="addtodoafterselect()">
         </div>
-
         <div style="height: 5px"></div>
 
         <div class="addtodo" onclick = "addtodo()">
