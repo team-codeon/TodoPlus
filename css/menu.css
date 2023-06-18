@@ -15,7 +15,6 @@
   max-height: 20%;
 }
 
-
 .logo {
   height: 100%;
   display: inline;
@@ -58,7 +57,7 @@
   font-size: 1vw;
 }
 
-.todonameset{
+.todonameset {
   width: 90%;
   background-color: #d4d4a6;
   border-radius: 15px;
@@ -82,8 +81,7 @@
   margin: 0
 }
 
-.tick {
+.checkmark {
   display: inline;
-  width: 5%;
-  margin: 0
+  height: 1.5vw;
 }
