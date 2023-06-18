@@ -1,0 +1,25 @@
+.footer-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+  background-color: rgb(189, 151, 151);
+  padding: 7.5px 12.5px;
+  border-radius: 20px;
+  width: 50%;
+  margin: 20px auto;
+  max-width: 95%;
+
+  /* change when necessary */
+  display: none;
+}
+
+.footer-text a {
+  color: rgb(64, 77, 77);
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.footer-text a:hover {
+  color: black;
+}
