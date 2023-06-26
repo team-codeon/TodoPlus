@@ -4,6 +4,8 @@ function addtodoafterselect() {
     todoname3 = "New Todo";
   }
 
+  localStorage.setItem( localStorage.getItem("todos").split(",").length-1,",")
+
   if (alltodos != "") {
     localStorage.setItem(
       "todos",
@@ -19,16 +21,13 @@ function addtodoafterselect() {
   if (alltodos2 != "") {
     alltodos2.forEach((todoname) => {
       if (todoname != "") {
-        const box =
-          `
-                <div class="todo">
-                    <h4 class = "menutodostext">` +
-          todoname +
-          `</h4>
-                </div>
-                
-                <div style = "height: 5px;"></div>
-                `;
+        const box = `
+          <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`">
+            <h4 class = "menutodostext">` + todoname + `</h4>
+          </div>
+          
+          <div style = "height: 5px;"></div>
+        `;
         document.getElementById("todos").innerHTML += box;
       }
     });
@@ -39,7 +38,6 @@ function addtodoafterselect() {
             <form onkeydown="return event.key != 'Enter';" style="display: inline; height: 10%;">
                 <input class="todonamesetform" type="text" placeholder="New Todo" id="todonamesetform" onblur="addtodoafterselect()">
             </form>
-            <img src="/media/checkmark.svg" class="checkmark" onclick="addtodoafterselect()">
         </div>
         <div style="height: 5px"></div>
 
@@ -49,6 +47,7 @@ function addtodoafterselect() {
     `;
 
   document.getElementById("todos").innerHTML += box;
+  document.getElementById(("todoitem"+localStorage.getItem("selectedid"))).style.backgroundColor="#999977"
 }
 
 function addtodo() {

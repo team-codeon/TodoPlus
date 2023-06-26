@@ -37,6 +37,7 @@
   padding: 0.1vw;
   padding-left: 5%;
   height: 2vw;
+  cursor: pointer;
 }
 
 .menutodostext {
@@ -78,11 +79,8 @@
   display: inline;
   height: 1.5vw;
   padding: 0;
-  width: 90%;
-  margin: 0
+  width: 80;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
 }
 
-.checkmark {
-  display: inline;
-  height: 1.5vw;
-}

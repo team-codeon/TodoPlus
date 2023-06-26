@@ -13,3 +13,6 @@ alltodos4.forEach(todoname2 => {
     }
     selectedid2 += 1
 });
+
+
+document.getElementById(("todoitem"+localStorage.getItem("selectedid"))).style.backgroundColor="#999977"

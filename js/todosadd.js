@@ -6,7 +6,7 @@ if (alltodos != "") {
   alltodos.forEach((todoname) => {
     if (todoname != "") {
       const box = `
-        <div class="todo" onclick="updateselect(`+id+`)">
+        <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`">
             <h4 class = "menutodostext">`+ todoname + `</h4>
         </div>
         
@@ -24,7 +24,6 @@ const box = `
     <form onkeydown="return event.key != 'Enter';" style="display: inline; height: 10%;">
       <input class="todonamesetform" type="text" placeholder="New Todo" id="todonamesetform" onblur="addtodoafterselect()">
     </form>
-    <img src="/media/checkmark.svg" class="checkmark" onclick="addtodoafterselect()">
   </div>
 
   <div style="height: 5px"></div>
