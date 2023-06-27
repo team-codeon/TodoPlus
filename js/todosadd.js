@@ -7,11 +7,13 @@ if (alltodos != "") {
   alltodos.forEach((todoname) => {
     if (todoname != "") {
       const box = `
+      <div class="todoback">
         <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`">
             <h4 class = "menutodostext">`+ todoname + `</h4>
         </div>
         
         <div style = "height: 5px;"></div>
+      </div>
       `;
 
       document.getElementById("todos").innerHTML += box;
