@@ -1,6 +1,7 @@
 document.getElementById("todos").innerHTML = ""
 let id = 1
 
+localStorage.setItem("selectedid","1")
 const alltodos = localStorage.getItem("todos").split(",");
 if (alltodos != "") {
   alltodos.forEach((todoname) => {

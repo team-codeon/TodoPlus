@@ -16,8 +16,9 @@ function addtodoafterselect() {
   }
 
   document.getElementById("todos").innerHTML = "";
-
   const alltodos2 = localStorage.getItem("todos").split(",");
+
+  let id = 1
   if (alltodos2 != "") {
     alltodos2.forEach((todoname) => {
       if (todoname != "") {
