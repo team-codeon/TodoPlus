@@ -70,7 +70,8 @@
 }
 
 .todonameset {
-  width: 90%;
+  width: 80%;
+  margin: auto;
   background-color: #d4d4a6;
   border-radius: 15px;
   padding-left: 5%;
