@@ -1,7 +1,12 @@
 let rightclicktype = "none"
+let rightclickid = "none"
 
 const contextMenu = document.getElementById("context-menu");
 const scope = document.querySelector("body");
+
+function rightclickmenuonbutton() {
+    contextMenu.classList.remove("visible");
+}
 
 const normalizePozition = (mouseX, mouseY) => {
   // ? compute what is the mouse position relative to the container element (scope)
@@ -57,10 +62,11 @@ scope.addEventListener("contextmenu", (event) => {
     contextMenu.innerHTML = ""
     if (rightclicktype == "todo") {
         const box = `
-            <div class="item">Edit</div>
-            <div class="item">Mark as complete</div>
-            <div class="item">Delete</div>
+            <div class="item" onclick="rightclickmenuonbutton()">Edit</div>
+            <div class="item" onclick="rightclickmenuonbutton()">Mark as complete</div>
+            <div class="item" onclick="rightclickmenuonbutton()">Delete</div>
         `
+        
         contextMenu.innerHTML = box
     }
     rightclicktype = "none"
@@ -79,4 +85,5 @@ scope.addEventListener("click", (e) => {
 
 function updaterightclickcontent(type , id) {
     rightclicktype = type
+    rightclickid = id
 }
