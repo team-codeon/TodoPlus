@@ -31,13 +31,23 @@
 }
 
 .todo {
-  width: 90%;
+  width: 80%;
   background-color: #d4d4a6;
   border-radius: 15px;
   padding: 0.1vw;
   padding-left: 5%;
   height: 2vw;
   cursor: pointer;
+  margin: auto;
+}
+
+.todoback {
+  scale: 100%;
+  transition: scale 2s ease-out 100ms
+}
+
+.todoback :hover {
+  scale: 1.05;
 }
 
 .menutodostext {
@@ -60,7 +70,8 @@
 }
 
 .todonameset {
-  width: 90%;
+  width: 80%;
+  margin: auto;
   background-color: #d4d4a6;
   border-radius: 15px;
   padding-left: 5%;

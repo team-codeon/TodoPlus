@@ -1,16 +1,19 @@
 document.getElementById("todos").innerHTML = ""
 let id = 1
+let type = `'todo'`
 
 const alltodos = localStorage.getItem("todos").split(",");
 if (alltodos != "") {
   alltodos.forEach((todoname) => {
     if (todoname != "") {
       const box = `
-        <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`">
+      <div class="todoback">
+      <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`" onmouseover="updaterightclickcontent('todo',`+ id +`)">
             <h4 class = "menutodostext">`+ todoname + `</h4>
         </div>
         
         <div style = "height: 5px;"></div>
+      </div>
       `;
 
       document.getElementById("todos").innerHTML += box;
@@ -34,3 +37,4 @@ const box = `
 `;
 
 document.getElementById("todos").innerHTML += box;
+document.getElementById(("todoitem"+localStorage.getItem("selectedid"))).style.backgroundColor="#999977"
