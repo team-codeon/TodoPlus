@@ -62,14 +62,14 @@ scope.addEventListener("contextmenu", (event) => {
     contextMenu.innerHTML = ""
     if (rightclicktype == "todo") {
         const box = `
-            <div class="item" onclick="rightclickmenuonbutton()">Edit</div>
+            <div class="item" onclick="rightclickmenuonbutton()">Rename</div>
             <div class="item" onclick="rightclickmenuonbutton()">Mark as complete</div>
             <div class="item" onclick="rightclickmenuonbutton()">Delete</div>
         `
         
         contextMenu.innerHTML = box
     }
-    rightclicktype = "none"
+
     contextMenu.classList.add("visible");
 
   });
@@ -86,4 +86,9 @@ scope.addEventListener("click", (e) => {
 function updaterightclickcontent(type , id) {
     rightclicktype = type
     rightclickid = id
+}
+
+function resetrightclickcontent() {
+  rightclicktype = "none"
+  rightclickid = "none"
 }

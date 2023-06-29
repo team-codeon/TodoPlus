@@ -1,15 +1,19 @@
-<!DOCTYPE html>
-<!-- + ————————————————————————————————————————— + -->
-<!-- | Things to do:                             | -->
-<!-- | 1) @SandwichedAvocado: fix some codes in  | --> 
-<!-- |    menu and update css to make responsive | -->
-<!-- + ————————————————————————————————————————— + -->
+<!-- + ————————————————————————————————————————————— + -->
+<!-- | Things to do:                                 | -->
+<!-- | 1) @SandwichedAvocado: Update CSS to make     | --> 
+<!-- |    responsive                                 | -->
+<!-- |                                               | -->
+<!-- | 2) @SandwichedAvocado or @CaramelisedApples:  | -->
+<!-- |    Add actions to right-click menu: 'Rename', | -->
+<!-- |    'Mark as complete', and 'Delete'.          | -->
+<!-- + ————————————————————————————————————————————— + -->
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Todo+</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,14 +26,23 @@
     <link rel="stylesheet" type="text/css" href="css/menu.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/rightclickmenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
   </head>
 
-  <body>
+  <body class="hide-scrollbar">
     <div class="menu" id="menu">
       <div class="menu-top hide-scrollbar">
         <img class="logo" src="/media/logowithtext.png" />
       </div>
       <div id="todos" class="menu-bottom hide-scrollbar"></div>
+    </div>
+
+    <div class="tasks">
+      <h3>No Todo selected.</h3>
+    </div>
+
+    <div class="todobar">
+
     </div>
 
     <footer>

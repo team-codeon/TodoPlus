@@ -8,7 +8,7 @@ if (alltodos != "") {
     if (todoname != "") {
       const box = `
       <div class="todoback">
-      <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`" onmouseover="updaterightclickcontent('todo',`+ id +`)">
+      <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`" onmouseover="updaterightclickcontent('todo',`+ id +`)" onmouseout="resetrightclickcontent()">
             <h4 class = "menutodostext">`+ todoname + `</h4>
         </div>
         

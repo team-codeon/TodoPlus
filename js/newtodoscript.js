@@ -24,7 +24,7 @@ function addtodoafterselect() {
       if (todoname != "") {
         const box = `
         <div class="todoback">
-          <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`" onmouseover="updaterightclickcontent('todo',`+ id +`)">
+          <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`" onmouseover="updaterightclickcontent('todo',`+ id +`)" onmouseout="`+`resetrightclickcontent()`+`">
               <h4 class = "menutodostext">`+ todoname + `</h4>
           </div>
           
@@ -54,6 +54,7 @@ function addtodoafterselect() {
   
   document.getElementById("todos").innerHTML += box;
   document.getElementById(("todoitem"+localStorage.getItem("selectedid"))).style.backgroundColor="#999977"
+  updateselect(id-1)
 }
 
 function addtodo() {
