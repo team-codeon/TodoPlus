@@ -1,5 +1,5 @@
 .tasks {
-    border-radius: 15px;
+    border-radius: 2.5vh;
     background-color: #a7c3d1;
     height: 80%;
     padding: 2%;
@@ -12,7 +12,7 @@
 .todobar {
     position: fixed;
     background-color: #a7c3d1;
-    border-radius: 15px; 
+    border-radius: 2.5vh; 
     top: 90.5%;
     height: 8%;
     width: 99%;

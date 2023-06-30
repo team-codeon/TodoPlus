@@ -1,5 +1,5 @@
 if (localStorage.getItem("selectedid") == null) {
-    localStorage.setItem("selectedid", 1)
+    localStorage.setItem("selectedid", null)
 }
 
 alltodos4 = localStorage.getItem("todos").split(',')

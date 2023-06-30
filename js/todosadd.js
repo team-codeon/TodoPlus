@@ -12,7 +12,7 @@ if (alltodos != "") {
             <h4 class = "menutodostext">`+ todoname + `</h4>
         </div>
         
-        <div style = "height: 5px;"></div>
+        <div style = "height: 0.3vw;"></div>
       </div>
       `;
 
@@ -27,9 +27,10 @@ const box = `
     <form onkeydown="return event.key != 'Enter';" style="display: inline; height: 10%;">
       <input class="todonamesetform" type="text" placeholder="New Todo" id="todonamesetform" onblur="addtodoafterselect()">
     </form>
+    <div style="height: 0.3vw"></div>
   </div>
 
-  <div style="height: 5px"></div>
+
 
   <div class="addtodo" onclick = "addtodo()">
     <h4>Add todo</h4>
