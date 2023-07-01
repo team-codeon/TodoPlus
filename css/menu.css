@@ -21,11 +21,11 @@
 }
 
 .logo {
-  height: 100%;
+  max-height: 6.5vh;
   display: inline;
   width: auto;
-  margin-top: 0;
-  margin-bottom: 0;
+  margin-top: 0vh;
+  margin-bottom: 0vh;
 }
 
 .menu-bottom {
@@ -43,11 +43,13 @@
   height: 2vw;
   cursor: pointer;
   margin: auto;
+  transition: 0.2s;
 }
 
 .todoback {
   scale: 100%;
-  transition: scale 2s ease-out 100ms
+  transition: scale 2s ease-out 100ms;
+
 }
 
 .todoback :hover {

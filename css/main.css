@@ -21,4 +21,5 @@
 
 .tasksname {
     font-size: 4.5vh;
+    transition: 2s;
 }
