@@ -21,5 +21,14 @@
 
 .tasksname {
     font-size: 4.5vh;
-    transition: 2s;
+    height: 6vh
+}
+
+.taskspart {
+    height: calc(100% - 6vh);
+}
+
+.tasksitem {
+    height: 5%;
+    background-color: #d4d4a6;
 }
