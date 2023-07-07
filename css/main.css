@@ -19,16 +19,42 @@
     left: 0.5%;
 }
 
-.tasksname {
-    font-size: 4.5vh;
-    height: 6vh
-}
-
 .taskspart {
     height: calc(100% - 6vh);
 }
 
-.tasksitem {
-    height: 5%;
+.taskitem {
     background-color: #d4d4a6;
+    border-radius: 1.5vw;
+    padding: 0.5vw;
+}
+
+.checkbox {
+    height: 1.5vw;
+    background-color: #a7c3d1;
+    border-radius: 0.3vw;
+    vertical-align: middle;
+}
+
+.taskname {
+    width: 60%;
+    display: inline-block;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 1.5vw;
+    font-size: 1.5vw;
+}
+
+.checkbox-outside {
+    width: 1.5vw;
+    height: 1.5vw;
+    display: inline-block;
+
+    vertical-align: middle;
+}
+
+.tasksname {
+    font-size: 2vw;
 }

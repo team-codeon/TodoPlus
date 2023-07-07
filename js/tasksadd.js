@@ -1,15 +1,14 @@
-function tasksadd() {
-    content = localStorage.getItem(localStorage.getItem("selectedid")).split(",")
-    taskid = 1
-    content.forEach(task => {
-        const box = `
-            <div class="taskitem" id="taskitem`+taskid+`>
-                <h5>`+task+`</h5>
-            </div>
-        `;
+content = localStorage.getItem(localStorage.getItem("selectedid")).split(",")
+let taskid = 1;
+content.forEach(item => {
+    const box = `
+        <div class="taskitem" id="taskitem`+localStorage.getItem("selectedid")+"."+taskid+`">
+            <div class="checkbox-outside"><div class="checkbox"></div></div>
+            <p class="taskname">`+item+`</p>
+        </div>
+        <div style="height: 0.3vw"></div>
+    `
 
-        document.getElementById("taskspart").innerHTML += box;
-    });
-}
-
-tasksadd()
+    document.getElementById("taskspart").innerHTML += box
+    taskid += 1
+});
