@@ -1,60 +1,59 @@
 .tasks {
-    border-radius: 2.5vh;
-    background-color: #a7c3d1;
-    height: 80%;
-    padding: 2%;
-    width: 72.6%;
-    position: fixed;
-    top: 1%;
-    left: 23%;
+  border-radius: 2.5vh;
+  background-color: #a7c3d1;
+  height: 80%;
+  padding: 2%;
+  width: 72.6%;
+  position: fixed;
+  top: 1%;
+  left: 23%;
 }
 
 .todobar {
-    position: fixed;
-    background-color: #a7c3d1;
-    border-radius: 2.5vh; 
-    top: 90.5%;
-    height: 8%;
-    width: 99%;
-    left: 0.5%;
+  position: fixed;
+  background-color: #a7c3d1;
+  border-radius: 2.5vh;
+  top: 90.5%;
+  height: 8%;
+  width: 99%;
+  left: 0.5%;
 }
 
 .taskspart {
-    height: calc(100% - 6vh);
+  height: calc(100% - 6vh);
 }
 
 .taskitem {
-    background-color: #d4d4a6;
-    border-radius: 1.5vw;
-    padding: 0.5vw;
+  background-color: #d4d4a6;
+  border-radius: 1.5vw;
+  padding: 0.5vw;
 }
 
 .checkbox {
-    height: 1.5vw;
-    background-color: #a7c3d1;
-    border-radius: 0.3vw;
-    vertical-align: middle;
+  height: 1.5vw;
+  background-color: #a7c3d1;
+  border-radius: 0.3vw;
+  vertical-align: middle;
 }
 
 .taskname {
-    width: 60%;
-    display: inline-block;
-    padding-top: 0;
-    padding-bottom: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    height: 1.5vw;
-    font-size: 1.5vw;
+  width: 60%;
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 1.5vw;
+  font-size: 1.5vw;
 }
 
 .checkbox-outside {
-    width: 1.5vw;
-    height: 1.5vw;
-    display: inline-block;
-
-    vertical-align: middle;
+  width: 1.5vw;
+  height: 1.5vw;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .tasksname {
-    font-size: 2vw;
+  font-size: 2vw;
 }
