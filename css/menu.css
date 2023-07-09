@@ -82,8 +82,8 @@
 
 .todonameset {
   width: 80%;
-  background-color: #e6c7c7;
-  border-radius: 2.5vh;
+  background-color: #e6e1c7;
+  border-radius: 1.5vh;
   padding-left: 5%;
   display: none;
   padding-top: 0.1vw;
@@ -98,7 +98,7 @@
   font-weight: bold;
   color: #3e3e69;
   display: inline;
-  height: 1.5vw;
+  height: 1.25vw;
   padding: 0;
   width: 80%;
   margin: 0;
