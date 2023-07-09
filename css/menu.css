@@ -1,3 +1,7 @@
+.todoTasksContainer {
+  display: flex;
+}
+
 .menu {
   border-radius: 2.5vh;
   background-color: #a7c3d1;
@@ -5,7 +9,6 @@
   padding: 2%;
   width: 18%;
   display: inline-block;
-  position: fixed;
   top: 1%;
   left: 0.5%;
 }
@@ -91,8 +94,8 @@
 
 .todonameset {
   width: 80%;
-  background-color: #e6c7c7;
-  border-radius: 2.5vh;
+  background-color: #e6e1c7;
+  border-radius: 1.5vh;
   padding-left: 5%;
   display: none;
   padding-top: 0.1vw;
@@ -103,7 +106,7 @@
 .todonamesetform {
   background: none;
   border-width: 0;
-  font-size: 1.5vw;
+  font-size: 1.25vw;
   font-weight: bold;
   color: #3e3e69;
   display: inline;

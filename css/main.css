@@ -4,19 +4,19 @@
   height: 80%;
   padding: 2%;
   width: 72.6%;
-  position: fixed;
   top: 1%;
   left: 23%;
+  position: absolute;
 }
 
 .todobar {
-  position: fixed;
+  position: absolute;
   background-color: #a7c3d1;
   border-radius: 2.5vh;
-  top: 90.5%;
   height: 8%;
   width: 99%;
   left: 0.5%;
+  margin-top: 1.5em;
 }
 
 .taskspart {
