@@ -6,11 +6,11 @@
   width: 72.6%;
   top: 1%;
   left: 23%;
-  position: absolute;
+  position: fixed;
 }
 
 .todobar {
-  position: absolute;
+  position: fixed;
   background-color: #a7c3d1;
   border-radius: 2.5vh;
   height: 8%;
