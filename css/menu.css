@@ -15,11 +15,12 @@
   position: fixed;
 }
 
-@media only screen and (max-width: 768px) {
+/* Not needed currently: */
+/* @media only screen and (max-width: 768px) {
   .menu {
     width: 95%;
   }
-}
+} */
 
 .menu-top {
   height: 8vh;
@@ -54,17 +55,16 @@
   height: 2vw;
   cursor: pointer;
   margin: auto;
-  transition: ease-in-out 500ms;
+  transition: ease-in-out 350ms;
 }
 
 .todoback {
-  transition: ease-in-out 500ms;
+  transition: ease-in-out 350ms;
+  margin: auto;
 }
 
 .todoback:hover {
   scale: 1.05;
-  margin-top: 0.35vw;
-  margin-bottom: 0.35vw;
 }
 
 .menutodostext {

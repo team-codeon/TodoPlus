@@ -17,24 +17,6 @@
     height: 8%;
     width: 99%;
     left: 0.5%;
-    margin-top: 1.5em;
-}
-
-.taskspart {
-    height: calc(100% - 6vh);
-}
-
-.taskitem {
-    background-color: #d4d4a6;
-    border-radius: 1.5vw;
-    padding: 0.5vw;
-}
-
-.checkbox {
-    height: 1.5vw;
-    background-color: #a7c3d1;
-    border-radius: 0.3vw;
-    vertical-align: middle;
 }
 
 .taskname {
@@ -48,14 +30,45 @@
     font-size: 1.5vw;
 }
 
-.checkbox-outside {
-    width: 1.5vw;
-    height: 1.5vw;
-    display: inline-block;
-
-    vertical-align: middle;
-}
-
 .tasksname {
     font-size: 2vw;
+}
+
+.checkbox-container {
+    height: 1.5vw;
+    width: 1.5vw;
+    padding: 0;
+    margin: 0;
+}
+
+.tasksitem {
+    background-color: #d4d4a6;
+    border-radius: 1.5vw;
+    margin-bottom: 0.3vw;
+    padding: 0.3vw;
+    width: 100%;
+}
+
+.checkbox {
+    width: 1.5vw;
+    background-color: #a7c3d1;
+    height: 1.5vw;
+    border-radius: 0.5vw;
+    margin: 0;
+    padding: 0;
+}
+.tasktext {
+    font-size: 1.4vw;
+    overflow-wrap: break-word;
+    width: 80%;
+    padding: 0;
+    text-align: left;
+    margin: 0.2vw;
+}
+
+.taskdetailscontainer {
+    padding: 0.1vw;
+    padding-left: 0.2vw;
+    width: 100%;
+    margin: 0;
 }

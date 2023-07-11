@@ -1,14 +1,21 @@
-content = localStorage.getItem(localStorage.getItem("selectedid")).split(",")
-let taskid = 1;
+const content = localStorage.getItem(localStorage.getItem("selectedid")).split(",")
+let taskid = 1
+
 content.forEach(item => {
     const box = `
-        <div class="taskitem" id="taskitem`+localStorage.getItem("selectedid")+"."+taskid+`">
-            <div class="checkbox-outside"><div class="checkbox"></div></div>
-            <p class="taskname">`+item+`</p>
-        </div>
-        <div style="height: 0.3vw"></div>
+    <div class="tasksitem" id="todoitem`+localStorage.getItem("selectedid")+"."+taskid.toString()+`">
+    <table class="taskdetailscontainer">
+    <tr>
+        <th class="checkbox-container">
+            <div class="checkbox"></div>
+        </th>
+        <th class="tasktext-container">
+            <p class="tasktext">`+item+`</p>
+        </th>
+    </tr>
+    
+    </div>
     `
-
-    document.getElementById("taskspart").innerHTML += box
     taskid += 1
+    document.getElementById("taskspart").innerHTML += box
 });
