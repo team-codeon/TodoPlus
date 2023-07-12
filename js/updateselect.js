@@ -15,4 +15,7 @@ function updateselect(idnumber) {
 
   // Update Todo name display
   document.getElementById("tasksname").innerHTML = (localStorage.getItem("todos").split(","))[idnumber];
+  
+  // Update tasks
+  tasksadd()
 }
