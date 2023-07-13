@@ -39,6 +39,8 @@
     width: 1.5vw;
     padding: 0;
     margin: 0;
+    transition: 1s;
+    transition-property: all ease-in-out;
 }
 
 .tasksitem {
@@ -47,6 +49,7 @@
     margin-bottom: 0.3vw;
     padding: 0.3vw;
     width: 100%;
+    cursor: pointer;
 }
 
 .checkbox {
@@ -64,6 +67,11 @@
     padding: 0;
     text-align: left;
     margin: 0.2vw;
+    text-decoration: none;
+}
+
+.tasksitem :hover .checkbox-container {
+    scale: 1.15;
 }
 
 .taskdetailscontainer {
@@ -74,14 +82,19 @@
 }
 
 .tick {
-    background-color: #000000;
+    background-color: #6f6f6f;
     height: 1.5vw;
     width: 1.5vw;
     opacity: 0;
+    transition: 0.4s;
+    transition-property: all ease-in-out;
+    clip-path: polygon(28% 38%, 41% 53%, 75% 24%, 86% 38%, 40% 78%, 15% 50%);
 }
 
 .checkedtick {
-    clip-path: polygon(28% 38%, 41% 53%, 75% 24%, 86% 38%, 40% 78%, 15% 50%);
     opacity: 1;
-    
+}
+
+.completedtask {
+    color: #6f6f6f;
 }

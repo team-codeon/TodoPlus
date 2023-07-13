@@ -6,16 +6,16 @@ function tasksadd() {
     content.forEach(item => {
         if (item != "") {
         const box = `
-            <div class="tasksitem" id="todoitem`+localStorage.getItem("selectedid")+"."+taskid.toString()+`" onclick="completetask('`+localStorage.getItem("selectedid")+`.`+taskid.toString()+`')">
+            <div class="tasksitem" id="todoitem${localStorage.getItem("selectedid")}.${taskid.toString()}" onclick="completetask('${localStorage.getItem("selectedid")}.${taskid.toString()}')">
             <table class="taskdetailscontainer">
             <tr>
                 <th class="checkbox-container">
                     <div class="checkbox">
-                        <div class="tick" id="tick`+localStorage.getItem("selectedid")+`.`+taskid.toString()+`"></div>
+                        <div class="tick" id="tick${localStorage.getItem("selectedid")}.${taskid.toString()}"></div>
                     </div>
                 </th>
                 <th class="tasktext-container">
-                    <p class="tasktext">`+item+`</p>
+                    <p class="tasktext" id="tasktextitem${localStorage.getItem("selectedid")}.${taskid.toString()}">${item}</p>
                 </th>
             </tr>
             
@@ -31,12 +31,6 @@ function tasksadd() {
 tasksadd()
 
 function completetask(taskkey) {
-    if (document.getElementById("tick"+taskkey).classList.contains("checkedtick")) {
-        document.getElementById("tick"+taskkey).classList.remove("checkedtick")
-    }
-
-    else {
-        document.getElementById("tick"+taskkey).classList.add("checkedtick")
-    }
-    
+    document.getElementById("tick"+taskkey).classList.add("checkedtick")
+    document.getElementById("tasktextitem"+taskkey).classList.add("completedtask")
 }
