@@ -1,3 +1,5 @@
+// LocalStorage transfer to JSON completed
+
 let rightclicktype = "none"
 let rightclickid = "none"
 

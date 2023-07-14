@@ -1,9 +1,12 @@
+// LocalStorage transfer to JSON completed
+
 document.getElementById("todos").innerHTML = ""
 let id = 1
 let type = `'todo'`
 
-const alltodos = localStorage.getItem("todos").split(",");
-if (alltodos != "") {
+
+const alltodos = JSON.parse(localStorage.getItem("todos")).todos;
+if (alltodos != []) {
   alltodos.forEach((todoname) => {
     if (todoname != "") {
       const box = `

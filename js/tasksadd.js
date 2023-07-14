@@ -1,10 +1,12 @@
+// LocalStorage transfer to JSON completed
+
 function tasksadd() {
     document.getElementById("taskspart").innerHTML = ""
-    const content = localStorage.getItem(localStorage.getItem("selectedid")).split(",")
+    const content = JSON.parse(localStorage.getItem(localStorage.getItem("selectedid"))).tasks
     let taskid = 1
 
     content.forEach(item => {
-        if (item != "") {
+        if (item.name != "") {
         const box = `
             <div class="tasksitem" id="todoitem${localStorage.getItem("selectedid")}.${taskid.toString()}" onclick="completetask('${localStorage.getItem("selectedid")}.${taskid.toString()}')">
             <table class="taskdetailscontainer">
@@ -15,7 +17,7 @@ function tasksadd() {
                     </div>
                 </th>
                 <th class="tasktext-container">
-                    <p class="tasktext" id="tasktextitem${localStorage.getItem("selectedid")}.${taskid.toString()}">${item}</p>
+                    <p class="tasktext" id="tasktextitem${localStorage.getItem("selectedid")}.${taskid.toString()}">${item.name}</p>
                 </th>
             </tr>
             
@@ -28,7 +30,7 @@ function tasksadd() {
     });
 }
 
-tasksadd()
+updateselect(localStorage.getItem("selectedid"))
 
 function completetask(taskkey) {
     document.getElementById("tick"+taskkey).classList.add("checkedtick")
