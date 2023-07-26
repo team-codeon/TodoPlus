@@ -1,18 +1,26 @@
 // LocalStorage transfer to JSON completed
 
-document.getElementById("todos").innerHTML = ""
-let id = 1
-let type = `'todo'`
-
+document.getElementById("todos").innerHTML = "";
+let id = 1;
+let type = `'todo'`;
 
 const alltodos = JSON.parse(localStorage.getItem("todos")).todos;
 if (alltodos != []) {
   alltodos.forEach((todoname) => {
     if (todoname != "") {
-      const box = `
+      const box =
+        `
       <div class="todoback">
-      <div class="todo" onclick="updateselect(`+id+`)" id="todoitem`+id+`" onmouseover="updaterightclickcontent('todo',`+ id +`)" onmouseout="resetrightclickcontent()">
-            <h4 class = "menutodostext">`+ todoname + `</h4>
+      <div class="todo" onclick="updateselect(` +
+        id +
+        `)" id="todoitem` +
+        id +
+        `" onmouseover="updaterightclickcontent('todo',` +
+        id +
+        `)" onmouseout="resetrightclickcontent()">
+            <h4 class = "menutodostext">` +
+        todoname +
+        `</h4>
         </div>
         
         <div style = "height: 0.3vw;"></div>
@@ -20,7 +28,7 @@ if (alltodos != []) {
       `;
 
       document.getElementById("todos").innerHTML += box;
-      id+=1
+      id += 1;
     }
   });
 }
@@ -41,4 +49,6 @@ const box = `
 `;
 
 document.getElementById("todos").innerHTML += box;
-document.getElementById(("todoitem"+localStorage.getItem("selectedid"))).style.backgroundColor="#999977"
+document.getElementById(
+  "todoitem" + localStorage.getItem("selectedid")
+).style.backgroundColor = "#999977";
