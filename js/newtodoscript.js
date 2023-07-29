@@ -37,7 +37,7 @@ function addtodoafterselect() {
         `;
 
         document.getElementById("todos").innerHTML += box;
-        id += 1;
+        id++;
       }
     });
   }

@@ -28,7 +28,7 @@ if (alltodos != []) {
       `;
 
       document.getElementById("todos").innerHTML += box;
-      id += 1;
+      id++;
     }
   });
 }
